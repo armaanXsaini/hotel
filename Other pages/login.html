@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body{
+    background-color: #dee9ff;
+}
+
+.registration-form{
+	padding: 50px 0;
+}
+
+.registration-form form{
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon{
+	text-align: center;
+    background-color: #5891ff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 100px;
+}
+
+.registration-form .item{
+	border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.registration-form .create-account{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+.jh{
+    width: auto;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 99999999;
+
+}
+@keyframes example {
+  0%   {background-color:blue}
+  25%  {background-color:white; }
+  50%  {background-color:grey }
+  75%  {background-color:white; }
+  100% {background-color:blue }
+}
+.registration-form .social-media{
+    max-width: 600px;
+    background-color: #fff;
+    margin: auto;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #9fadca;
+    border-top: 1px solid #dee9ff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .social-icons{
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.registration-form .social-icons a{
+    font-size: 23px;
+    margin: 0 3px;
+    color: blue;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    background-color: #fff;
+    line-height: 45px;
+}
+section.services .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        border-color: white;
+        
+    }
+.section-heading{
+        color:blue;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2.7rem;
+    }
+    .section-heading +p{
+        color:black;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .card-wrapper{
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+        .vc{
+            height: 55px;
+            width: 55px;
+        }
+        .mm{
+            font-size: 0.8rem;
+        }
+}
+.button{
+  display: inline-block;
+  align-items: center;
+  background-color:blue;
+  color:Black;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.button:hover{
+  background-color:rgb(244,164,96) ;
+  box-shadow: 0 5px 0 #006599;
+  color: black;
+  cursor: pointer;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+.button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+.registration-form .social-icons a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+    .registration-form form{
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+    </style>
+    <script>
+        $(document).ready(function(){
+  $('#birth-date').mask('00/00/0000');
+  $('#phone-number').mask('0000-0000');
+ })
+    </script>
+</head>
+<body>
+    <div class="registration-form">
+        <form>
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="phone-number" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="birth-date" placeholder="Birth Date">
+            </div>
+            <div class="form-group">
+                <a href="" class="button jh">Create Account</a>
+            </div>
+        </form>
+        <div class="social-media">
+            <h5>Sign up with social media</h5>
+            <div class="social-icons">
+                <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
+                <a href="#"><i class="icon-social-google" title="Google"></i></a>
+                <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <section class="services">
+        <div class="container">
+        <h1 class="section-heading ff"><span>My</span> Contacts</h1>
+            <p> You Can contact me through them<br/>Click On the Social logo for my ID</p>
+            <div class="card-wrapper">
+            <div class="card">
+                <a href="https://www.facebook.com/armaansain809">   <img class="vc" src="https://clipground.com/images/facebook-black-clipart-5.jpg" alt="" height="90" width="90"></a>
+                <h2 class="mm"> Facebook </h2>
+                
+                </div>
+               
+           <div class="card">
+              <a href="https://instagram.com/_armaan_k.saini_?utm_medium=copy_link">  <img class="vc" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Black_Instagram_icon.svg/1024px-Black_Instagram_icon.svg.png" alt="" height="90" width="90"></a>
+                  <h2 class="mm"> Instagram </h2></div>
+                <div class="card">
+           <a href="https://api.whatsapp.com/send?phone=916230088449">    <img class="vc" src="https://th.bing.com/th/id/OIP.XZMQynreehNOD_7_tI8KFQHaHa?pid=ImgDet&rs=1" alt="" height="90" width="90" onclick="myalert()"></a> 
+               <h2 class="mm"> Whatsapp </h2></div>
+             <div class="card">
+           <a href="https://www.google.com/">    <img class="vc"  src="https://th.bing.com/th/id/OIP.iR3PhPRcNpziW3eNefvjLQHaHa?pid=ImgDet&rs=1" alt="" height="90" width="90"></a> 
+               <h2 class="mm"> Linkedin </h2></div>
+              
+            </div>
+            
+        </div>
+    
+    </section>
+    <footer style="padding: 30px;"></footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+   <script>$(document).ready(function(){
+        $('#birth-date').mask('00/00/0000');
+        $('#phone-number').mask('0000-0000');
+       })
+    </script> 
+</body>
+</html>
